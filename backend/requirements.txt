@@ -1,0 +1,6 @@
+flask
+pymongo
+mysql-connector-python
+langchain
+openai
+python-dotenv
