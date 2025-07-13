@@ -41,14 +41,14 @@ const WealthQueryInterface = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 flex flex-col md:flex-row items-start justify-center p-4 gap-6 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-emerald-400/10 to-teal-600/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="bg-white/10 backdrop-blur-xl shadow-2xl rounded-3xl p-8 w-full max-w-4xl transition-all duration-500 hover:shadow-3xl border border-white/20 relative z-10">
+      <div className="bg-white/10 backdrop-blur-xl shadow-2xl rounded-3xl p-8 w-full max-w-3xl transition-all duration-500 hover:shadow-3xl border border-white/20 relative z-10">
         <div className="flex items-center gap-3 mb-8">
           <div className="bg-gradient-to-r from-emerald-400 to-cyan-400 p-3 rounded-2xl shadow-lg">
             <TrendingUp className="text-white w-6 h-6" />
@@ -165,6 +165,17 @@ const WealthQueryInterface = () => {
             )}
           </div>
         )}
+      </div>
+
+      {/* Submission Info Panel */}
+      <div className="bg-white/10 backdrop-blur-xl shadow-2xl rounded-3xl p-6 w-full max-w-sm transition-all duration-500 hover:shadow-3xl border border-white/20 relative z-10 mt-8 md:mt-0">
+        <h2 className="text-xl font-semibold text-white mb-4">📤 Submission Info</h2>
+        <div className="grid gap-4">
+          <input type="url" defaultValue="https://github.com/PrinceKeshri966/Natural-Language-Cross-Platform-Data-Query-RAG-Agent." className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300" required />
+          <input type="url" defaultValue="https://drive.google.com/file/d/1KEWKWWR02hdQbUTTFk6gGXS4fj8Rau0Y/view?usp=sharing" className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300" required />
+          <input type="url" placeholder="Prototype Link (Optional)" className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300" />
+          <textarea placeholder="Remarks (Optional)" rows="3" className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300"></textarea>
+        </div>
       </div>
 
       <style jsx>{`
