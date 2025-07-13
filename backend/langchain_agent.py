@@ -71,13 +71,7 @@ def process_query(user_query):
             """
             return run_mysql_query(sql)
 
-        elif "each portfolio invested" in user_query.lower():
-            sql = """
-                SELECT portfolio_id, SUM(value) AS total_investment
-                FROM transactions
-                GROUP BY portfolio_id;
-            """
-            return run_mysql_query(sql)
+     
 
         # 🧠 Optional fallback: LLM response if no rule matches
         else:
