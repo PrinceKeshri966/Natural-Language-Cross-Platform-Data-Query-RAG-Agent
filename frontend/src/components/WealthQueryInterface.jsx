@@ -171,7 +171,7 @@ const WealthQueryInterface = () => {
       <div className="bg-white/10 backdrop-blur-xl shadow-2xl rounded-3xl p-6 w-full max-w-sm transition-all duration-500 hover:shadow-3xl border border-white/20 relative z-10 mt-8 md:mt-0">
         <h2 className="text-xl font-semibold text-white mb-4">📤 Submission Info</h2>
         <div className="grid gap-4">
-          <input type="url" defaultValue="https://github.com/PrinceKeshri966/Natural-Language-Cross-Platform-Data-Query-RAG-Agent." className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300" required />
+          <input type="url" defaultValue="https://github.com/PrinceKeshri966/Natural-Language-Cross-Platform-Data-Query-RAG-Agent" className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300" required />
           <input type="url" defaultValue="https://drive.google.com/file/d/1KEWKWWR02hdQbUTTFk6gGXS4fj8Rau0Y/view?usp=sharing" className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300" required />
           <input type="url" placeholder="Prototype Link (Optional)" className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300" />
           <textarea placeholder="Remarks (Optional)" rows="3" className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300"></textarea>
